@@ -1,4 +1,4 @@
-#YOLOv3 Real-Time Object Detection
+YOLOv3 Real-Time Object Detection
 Description
 This project implements a real-time object detection system using YOLOv3 (You Only Look Once), OpenCV, and the COCO dataset. The program captures live video streams from a webcam, processes each frame to detect objects, and displays the detected objects with bounding boxes and class labels.
 
