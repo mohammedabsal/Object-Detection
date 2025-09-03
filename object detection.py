@@ -6,7 +6,7 @@ net = cv2.dnn.readNet("yolov3.weights", "yolov3.cfg")
 layer_names = net.getLayerNames()
 output_layers = [layer_names[i - 1] for i in net.getUnconnectedOutLayers().flatten()]
 
-# Load COCO names
+# Load COCO names --
 with open("coco.names", "r") as f:
     classes = [line.strip() for line in f.readlines()]
 
@@ -78,5 +78,6 @@ while True:
 # Release the capture and close windows
 cap.release()
 cv2.destroyAllWindows()
+
 
 
