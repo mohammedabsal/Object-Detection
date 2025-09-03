@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-# Load YOLO model version 3
+# Load YOLO model v3
 net = cv2.dnn.readNet("yolov3.weights", "yolov3.cfg")
 layer_names = net.getLayerNames()
 output_layers = [layer_names[i - 1] for i in net.getUnconnectedOutLayers().flatten()]
@@ -78,4 +78,5 @@ while True:
 # Release the capture and close windows
 cap.release()
 cv2.destroyAllWindows()
+
 
